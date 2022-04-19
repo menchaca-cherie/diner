@@ -1,0 +1,12 @@
+{
+  "name": "menchaca/328/diner",
+  "authors": [
+    {
+      "name": "Cherie Menchaca",
+      "email": "menchaca.cherie@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
