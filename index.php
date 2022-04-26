@@ -13,12 +13,29 @@ $f3 = Base::instance();
 
 //Define a default route /- root directory of the project
 $f3->route('GET /', function(){
-    //echo "Diner Project";
+
     $view = new Template();
     echo $view->render('views/home.html');
-}
-);
-
+});
+//Define a breakfast route
+$f3->route('GET /breakfast', function(){
+    //echo "Breakfast page";
+    //echo "Diner Project";
+    $view = new Template();
+    echo $view->render('views/breakfast.html');
+});
+$f3->route('GET /lunch', function(){
+    //echo "Breakfast page";
+    //echo "Diner Project";
+    $view = new Template();
+    echo $view->render('views/lunch.html');
+});
+$f3->route('GET /order', function(){
+    //echo "Breakfast page";
+    //echo "Diner Project";
+    $view = new Template();
+    echo $view->render('views/order.html');
+});
 
 //Run fat free
 $f3->run();
